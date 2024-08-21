@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #E31837;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #222222;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 20px 3px -20px #111;
+    position: fixed;
+    width: 100%;
+}
+
+/* SIDE BAR MENU */
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+    z-index: 100;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--red);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -600px;
+    width: 600px;
+    height: 100%;
+    background-color: var(--white);
+    padding-top: 150px;
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 20px 50px;
+    display: block;
+    font-size: 100%;
+}
+
+.menu-toggle:checked + .hamburger + .sidebar {
+    left: 0;
+}
+
+.jollie-globe p{
+    background-color: var(--red);
+    width: 100%;
+    position: relative;
+    top: 20;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    font-size: 130%;
+}
+
+li .arrow-right {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    font-size: 30px;
+    color: var(--red);
+}
+
+li .jolli-merchs {
+    font-size: 24px;
+    color: black;
+    margin: 0px 0px 0px 10px;
+}
+/* END */
+
+.jollibee-container {
+    position: relative;
+}
+
+.first-header {
+    background-color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    padding-inline: 13%;
+    padding-top: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding-left: 40px;
+}
+
+.jollie-center {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 40%;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+}
+
+.second-header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+    padding-inline: 10px;
+}
+
+.start-order {
+    background-color: var(--red);
+    height: 55px;
+    width: 200px;
+    max-width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+    font-size: 1rem;
+    color: white ;
+}
+
+.section-jollibee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 85vh;
+    gap: 50px;
+    z-index: 11111;
+    padding-top: 160px;
+    width: 100%;
+}
+
+.section-jollibee-middle {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100vw;
+    margin-left: 10%;
+}
+
+.section-jollibee .burger-left {
+    display: flex;
+}
+
+
+.burger-right h3{
+    font-size: 3rem;
+    width: 70%;
+    line-height: 50px;
+    padding-bottom: 20px;
+    color: var(--gray);
+}
+
+.p-chicken h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 60%;
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: var(--gray);
+}
+
+.burgah p {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.order {
+    position: static;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 36px  ;
+}
+
+.first-header .globe-icon {
+    position: relative;
+    right: 5px;
+    top: 2px;
+}
+
+.jollie-center .arrow-down {
+    position: relative;
+    left: 5px;
+    top: 3px;
+    color: var(--red);
+}
+
+.jollie-center .jolli-merch {
+    position: relative;
+    color: var(--red);
+    left: 10px;
+    font-size: 20px;
+    top: 5px;
+}
+
+/* MERCH JOLLIBEE */
+
+.jollibee-merch {
+    background-color: rgba(80, 154, 156, 0.116);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 40px;
+}
+
+.merch-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.left-container {
+    display: inline-block;
+    line-height: 60px;
+}
+
+.left-container-text {
+    padding-right: 100px;
+}
+
+.left-container h3{
+    font-size: 25px;
+}
+
+.left-container h2{
+    margin: 15px 0px 0px;
+    font-size: 2.8rem;
+}
+
+.left-container strong{
+    font-size: 22px;
+}
+
+.left-container .shop-now a{
+    background-color: var(--red);
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/*SECTION JOLLIBEE SECOND */
+.section-jollibee-sec {
+    width: 100%;
+    padding-inline: 10px;
+    padding-bottom: 100px;
+}
+
+.section-middle-container {
+    height: 85%;
+    margin: 80px 0;
+}
+
+.text-section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.h2-section {
+    width: 30vw;
+}
+
+.h2-section h2{
+    line-height:55px;
+    padding-bottom: 30px;
+}
+
+.h2-section p {
+    width: 95%;
+    font-size: 16px;
+}
+
+.h2-section p a{
+    color: var(--red);
+}
+
+/*CHICKEN FAVORITES*/
+
+.jollibee-favorites {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 10px;
+}
+
+.favorite-container {
+    margin: 50px;
+}
+
+.jollibee-text-top {
+    display: inline-block;
+    width: auto;
+    margin-left: 115px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 40px;
+    padding-left: 40px
+}
+
+.choices h2{
+    width: 90%;
+    color: var(--gray);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.choices a{
+    text-decoration: none;
+}
+
+.choices .left-arrow {
+    font-size: 40px;
+    align-self: center;
+    color: var(--red);
+}
+
+.choices .right-arrow {
+    font-size: 40px;
+    align-self: center;
+    color: var(--red);
+}
+
+.choices a:nth-child(2) {
+    text-align: center;
+}
+.choices a:nth-child(3) {
+    text-align: center;
+}
+.choices a:nth-child(4) {
+    text-align: center;
+}
+.choices a:nth-child(5) {
+    text-align: center;
+}
+
+.choices h2{
+    width: 100%;
+}
+
+/* CARD SECTION */
+
+.jollibee-card-container {
+    height: 100vh;
+    padding-inline: 10px;
+}
+
+.first-text-card h3{
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.first-text-card {
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.first-text-card p{
+    width: 100%;
+}
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-card {
+    width: 28.2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.second-card {
+    width: 28.2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.learn-more {
+    border-radius: 50px;
+    margin: 28px 0px 0px;
+    background-color: var(--red);
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+
+.download-pdf {
+    border-radius: 50px;
+    margin: 28px 0px 0px;
+    background-color: var(--red);
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+}
+
+.learn-more a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.download-pdf a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+/*JOLLIBEE BRANCH */
+
+.jollibee-branch {
+    height: 80vh;
+}
+
+.opening {
+    padding: 0px 32px 48px;
+}
+
+.opening h2 {
+    margin: 0px 0px 20px;
+    font-size: 48px;
+    color: #222222;
+    text-align: center;
+}
+
+.opening p{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+}
+
+.opening a{
+    color: var(--red);
+    text-align: center;
+}
+
+.branch-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+.branches{
+    text-align: center;
+}
+
+.branches h3{
+    font-size: 24px;
+    padding: 30px 0px;
+    color: #222222;
+}
+
+.store-details a{
+    display: inline-block;
+    background-color: var(--red);
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    width: 60%;
+    border-radius: 50px;
+    padding: 12px 36px;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background-color: var(--red);
+    height: 40vh;
+    color: white;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    gap: 100px;
+    
+}
+
+.regulation {
+    width: 35vw;
+    font-size: 14px;
+}
+
+.inputt input[type="email"] {
+    width: 350px;
+    height: 50px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+button {
+    background-color: #EFBB40;
+    color: black;
+    padding: 12px 36px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.left-footer {
+    height: 60%;
+    line-height: 50px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.second-footer {
+    height: 100vh;
+    width: 100%;
+}
+
+.second-footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    gap: 10px;
+}
+
+.info a{
+    display: flex;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.second-footer-container img {
+    position: static;
+    padding-right: 100px;
+}
+
+.footer-info {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 80px;
+}
+
+.footer-info h2 {
+    color: #222222;
+    margin: 0px 0px 24px;
+}
+
+.info {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.start-order-footer {
+    display: inline-block;
+    background-color: var(--red);
+    height: 50px;
+    width: 80%;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    font-family: "Poppins",sans-serif;
+    color: white ;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+.last-footer-border {
+    border-top: 1px solid gray;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 40px;
+}
+
+.text-footer {
+    color:var(--red);
+    font-size: 14px;
+}
+
+.last-footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.soc-med-footer a{
+    font-size: 34px;
+    color: var(--red);
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
